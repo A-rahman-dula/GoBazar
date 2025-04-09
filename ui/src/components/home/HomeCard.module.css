@@ -1,0 +1,116 @@
+/* HomeCard Styles */
+.col {
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  border-radius: 16px;
+  overflow: hidden;
+  background: linear-gradient(
+    145deg,
+    #ffffff,
+    #f8f9fa
+  ); /* Soft gradient background */
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-radius 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px; /* More rounded on hover */
+}
+
+.cardImgWrapper {
+  position: relative;
+  overflow: hidden;
+}
+
+.cardImgTop {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cardImgTop:hover {
+  transform: scale(1.1); /* Zoom effect on image */
+}
+
+.cardBody {
+  background-color: #fff;
+  text-align: center; /* Centers the text inside */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure content fills the available height */
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Soft text shadow */
+  transition: color 0.3s ease;
+}
+
+.cardTitle:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+.cardPrice {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+.cardPrice:hover {
+  color: #0056b3; /* Darken on hover */
+}
+
+.cardFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+}
+
+.btn-primary {
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.btn-primary i {
+  font-size: 1.2rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .card {
+    transform: none;
+  }
+
+  .cardImgTop {
+    height: 220px;
+  }
+
+  .cardTitle {
+    font-size: 1.1rem;
+  }
+
+  .cardPrice {
+    font-size: 1.1rem;
+  }
+}

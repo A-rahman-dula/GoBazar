@@ -1,0 +1,31 @@
+.carousel-caption {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.carousel-caption h3 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/* Custom slider container */
+.slider-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+.carousel-item {
+  height: 70vh;
+}
+
+.carousel-item img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}

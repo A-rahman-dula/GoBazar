@@ -1,0 +1,150 @@
+/* AddProductFormStyle.css */
+
+/* Modal styles */
+.modal-content {
+  border-radius: 12px;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  background-color: #ffffff;
+}
+
+.modal-header {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border-bottom: none;
+  padding: 20px;
+  text-align: center;
+}
+
+.modal-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.modal-body {
+  padding: 25px;
+  background-color: #f9fafb;
+}
+
+/* Form group styles */
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #2d3748;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control {
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  padding: 12px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+  background-color: white;
+  color: #4a5568;
+}
+
+.form-control:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Textarea styles */
+textarea.form-control {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* Select dropdown styles */
+.form-control[as='select'] {
+  appearance: none;
+  background-color: white;
+  background-position: right 12px center;
+  background-size: 12px;
+  padding-right: 35px;
+}
+
+/* File input styles */
+.form-control[type='file'] {
+  padding: 10px;
+  background-color: #f8f9fa;
+  border: 1px dashed #e2e8f0;
+  cursor: pointer;
+}
+
+.form-control[type='file']:hover {
+  background-color: #e9ecef;
+  border-color: #007bff;
+}
+
+/* Button styles */
+.btn-primary {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  border: none;
+  border-radius: 8px;
+  padding: 12px 25px;
+  font-size: 1rem;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(135deg, #0056b3, #004080);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 123, 255, 0.3);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 6px rgba(0, 123, 255, 0.2);
+}
+
+/* Error message styles */
+.error-message {
+  color: #e53e3e;
+  font-size: 0.875rem;
+  margin-top: 5px;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 576px) {
+  .modal-body {
+    padding: 20px;
+  }
+
+  .form-control {
+    font-size: 0.875rem;
+    padding: 10px;
+  }
+
+  .btn-primary {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+/* Animation for modal entrance */
+@keyframes slideIn {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  animation: slideIn 0.3s ease-out;
+}

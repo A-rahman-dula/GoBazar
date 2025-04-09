@@ -1,0 +1,99 @@
+/* Product Page Styles */
+
+.product-page {
+  font-family: 'Arial', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Product Section */
+.product-section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.product-image {
+  max-height: 400px;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.product-image:hover {
+  transform: scale(1.05);
+}
+
+.product-title {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.product-price {
+  color: #007bff;
+  font-weight: 500;
+}
+
+.product-description {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* Button Styling */
+.add-to-cart-btn {
+  border-radius: 30px;
+  padding: 0.8rem 2rem;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+.add-to-cart-btn:disabled {
+  background-color: #6c757d;
+}
+
+.add-to-cart-btn i {
+  font-size: 1.2rem;
+}
+
+/* Related Products Section */
+.related-products {
+  background-color: #ffffff;
+  padding-top: 3rem;
+}
+
+.related-products h2 {
+  font-size: 2rem;
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+
+.related-products .product-card {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 1rem;
+  transition: transform 0.2s ease;
+}
+
+.related-products .product-card:hover {
+  transform: translateY(-10px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .product-title {
+    font-size: 2rem;
+  }
+
+  .product-price {
+    font-size: 1.2rem;
+  }
+
+  .add-to-cart-btn {
+    font-size: 1rem;
+    padding: 0.7rem 1.5rem;
+  }
+}
